@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DFitnessTracker</string>
+    <string name="title_activity_trainer_contact_info">trainerContactInfo</string>
 </resources>
