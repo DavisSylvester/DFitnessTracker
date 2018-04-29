@@ -21,10 +21,56 @@
             android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
             android:layout_height="352dp"
-            android:layout_marginTop="3dp"
             android:background="@drawable/action_athlete_barbell_grayscale"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="0dp">
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/csLayoutAddress"
+                android:layout_width="306dp"
+                android:layout_height="72dp"
+                android:layout_marginTop="36dp"
+                android:background="@color/colorPrimary"
+                app:layout_constraintTop_toBottomOf="@+id/txtDavisS"
+                tools:layout_editor_absoluteX="16dp">
+
+                <TextView
+                    android:id="@+id/txtStreetAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="1700 Gayla Creek Dr"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="6dp" />
+
+                <TextView
+                    android:id="@+id/txtPhoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:fontFamily="@font/arvo_regular"
+                    android:text="Tel:  214-223-1413"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:layout_editor_absoluteY="40dp" />
+
+                <TextView
+                    android:id="@+id/txtEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Davis@SylvesterLLC.com"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="41dp" />
+
+                <TextView
+                    android:id="@+id/txtCityStateZip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:text="Little Elm, TX 75068"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:layout_editor_absoluteY="6dp" />
+            </android.support.constraint.ConstraintLayout>
 
             <TextView
                 android:id="@+id/txtSylvesterE"
