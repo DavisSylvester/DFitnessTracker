@@ -11,43 +11,241 @@
     <android.support.constraint.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="181dp"
-        android:layout_marginTop="8dp"
-        android:background="@color/colorPrimary"
+        android:layout_height="352dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/action_athlete_barbell_grayscale"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp">
 
-        <TextView
-            android:id="@+id/editText"
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginEnd="24dp"
+            android:layout_height="352dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/action_athlete_barbell_grayscale"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp">
 
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="16dp"
-            android:ems="10"
-            android:fontFamily="@font/arvo_bold"
-            android:inputType="textPersonName"
-            android:text="Davis Sylvester III"
-            android:textColor="@android:color/white"
-            android:textSize="30sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/txtSylvesterE"
+                android:layout_width="34dp"
+
+                android:layout_height="35dp"
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:fontFamily="@font/arvo_bold"
+                android:inputType="textPersonName"
+                android:text="e"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/txtSylvesterV"
+                tools:layout_editor_absoluteX="349dp" />
+
+            <TextView
+                android:id="@+id/txtSylvesterSs"
+                android:layout_width="34dp"
+
+                android:layout_height="35dp"
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:fontFamily="@font/arvo_bold"
+                android:inputType="textPersonName"
+                android:text="s"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/txtSylvesterE"
+                tools:layout_editor_absoluteX="349dp" />
+
+            <TextView
+                android:id="@+id/txtSylvesterT"
+                android:layout_width="34dp"
+
+                android:layout_height="35dp"
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:fontFamily="@font/arvo_bold"
+                android:inputType="textPersonName"
+                android:text="t"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/txtSylvesterSs"
+                tools:layout_editor_absoluteX="349dp" />
+
+            <TextView
+                android:id="@+id/txtSylvesterEe"
+                android:layout_width="34dp"
+
+                android:layout_height="35dp"
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:fontFamily="@font/arvo_bold"
+                android:inputType="textPersonName"
+                android:text="e"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/txtSylvesterT"
+                tools:layout_editor_absoluteX="349dp" />
+
+            <TextView
+                android:id="@+id/txtSylvesterR"
+                android:layout_width="34dp"
+
+                android:layout_height="35dp"
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:fontFamily="@font/arvo_bold"
+                android:inputType="textPersonName"
+                android:text="r"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/txtSylvesterEe"
+                tools:layout_editor_absoluteX="349dp" />
+
+            <TextView
+                android:id="@+id/txtSylvesterV"
+                android:layout_width="34dp"
+
+                android:layout_height="35dp"
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:fontFamily="@font/arvo_bold"
+                android:inputType="textPersonName"
+                android:text="v"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/txtSylvesterL"
+                tools:layout_editor_absoluteX="349dp" />
+
+            <TextView
+                android:id="@+id/txtDavisA"
+                android:layout_width="34dp"
+                android:layout_height="0dp"
+
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:fontFamily="@font/arvo_bold"
+                android:inputType="textPersonName"
+                android:text="@string/app_name"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtDavisD"
+                tools:text="a" />
+
+            <TextView
+                android:id="@+id/txtDavisS"
+                android:layout_width="34dp"
+                android:layout_height="0dp"
+
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:fontFamily="@font/arvo_bold"
+                android:inputType="textPersonName"
+                android:text="s"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtDavisI" />
+
+            <TextView
+                android:id="@+id/txtDavisI"
+                android:layout_width="34dp"
+                android:layout_height="0dp"
+
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:fontFamily="@font/arvo_bold"
+                android:inputType="textPersonName"
+                android:text="i"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtDavisV" />
+
+            <TextView
+                android:id="@+id/txtSylvesterS"
+                android:layout_width="34dp"
+                android:layout_height="35dp"
+
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:fontFamily="@font/arvo_bold"
+                android:inputType="textPersonName"
+                android:text="S"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="349dp" />
+
+            <TextView
+                android:id="@+id/txtSylvesterY"
+                android:layout_width="34dp"
+                android:layout_height="39dp"
+
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:fontFamily="@font/arvo_bold"
+                android:inputType="textPersonName"
+                android:text="y"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/txtSylvesterS"
+                tools:layout_editor_absoluteX="349dp" />
+
+            <TextView
+                android:id="@+id/txtSylvesterL"
+                android:layout_width="34dp"
+
+                android:layout_height="32dp"
+                android:layout_marginTop="2dp"
+                android:ems="10"
+                android:fontFamily="@font/arvo_bold"
+                android:inputType="textPersonName"
+                android:text="l"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/txtSylvesterY"
+                tools:layout_editor_absoluteX="349dp" />
+
+            <TextView
+                android:id="@+id/txtDavisV"
+                android:layout_width="34dp"
+                android:layout_height="0dp"
+
+                android:ems="10"
+                android:fontFamily="@font/arvo_bold"
+                android:inputType="textPersonName"
+                android:text="v"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                tools:layout_editor_absoluteX="4dp"
+                tools:layout_editor_absoluteY="95dp" />
+
+            <TextView
+                android:id="@+id/txtDavisD"
+                android:layout_width="34dp"
+                android:layout_height="0dp"
+
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:fontFamily="@font/arvo_bold"
+                android:inputType="textPersonName"
+                android:text="D"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
     </android.support.constraint.ConstraintLayout>
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="287dp"
-        android:layout_height="172dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-        app:srcCompat="@drawable/action_athlete_barbell" />
 
 </android.support.constraint.ConstraintLayout>
