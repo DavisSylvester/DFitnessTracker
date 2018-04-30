@@ -1,33 +1,310 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".trainerContactInfo">
 
-    <android.support.design.widget.AppBarLayout
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_height="match_parent"
+        android:background="@drawable/action_athlete_barbell_grayscale"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="8dp">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/csLayoutAddress"
+            android:layout_width="306dp"
+            android:layout_height="72dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="36dp"
+            android:background="@color/colorGreen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txtSylvesterR"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDavisS">
 
-    </android.support.design.widget.AppBarLayout>
+            <TextView
+                android:id="@+id/txtStreetAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="1700 Gayla Creek Dr"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <include layout="@layout/content_trainer_contact_info" />
+            <TextView
+                android:id="@+id/txtPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/arvo_regular"
+                android:text="Tel:  214-223-1413"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txtEmail"
+                app:layout_constraintTop_toBottomOf="@+id/txtCityStateZip" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Davis@SylvesterLLC.com"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtStreetAddress" />
+
+            <TextView
+                android:id="@+id/txtCityStateZip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Little Elm, TX 75068"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txtStreetAddress"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/txtSylvesterE"
+            android:layout_width="34dp"
+
+            android:layout_height="35dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:fontFamily="@font/arvo_bold"
+            android:inputType="textPersonName"
+            android:text="e"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSylvesterV" />
+
+        <TextView
+            android:id="@+id/txtSylvesterSs"
+            android:layout_width="34dp"
+
+            android:layout_height="35dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:fontFamily="@font/arvo_bold"
+            android:inputType="textPersonName"
+            android:text="s"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSylvesterE" />
+
+        <TextView
+            android:id="@+id/txtSylvesterT"
+            android:layout_width="34dp"
+
+            android:layout_height="35dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:fontFamily="@font/arvo_bold"
+            android:inputType="textPersonName"
+            android:text="t"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSylvesterSs" />
+
+        <TextView
+            android:id="@+id/txtSylvesterEe"
+            android:layout_width="34dp"
+
+            android:layout_height="35dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:fontFamily="@font/arvo_bold"
+            android:inputType="textPersonName"
+            android:text="e"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSylvesterT" />
+
+        <TextView
+            android:id="@+id/txtSylvesterR"
+            android:layout_width="34dp"
+
+            android:layout_height="35dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:fontFamily="@font/arvo_bold"
+            android:inputType="textPersonName"
+            android:text="r"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSylvesterEe" />
+
+        <TextView
+            android:id="@+id/txtSylvesterV"
+            android:layout_width="34dp"
+
+            android:layout_height="35dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:fontFamily="@font/arvo_bold"
+            android:inputType="textPersonName"
+            android:text="v"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSylvesterL" />
+
+        <TextView
+            android:id="@+id/txtDavisS"
+            android:layout_width="34dp"
+            android:layout_height="0dp"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:fontFamily="@font/arvo_bold"
+            android:inputType="textPersonName"
+            android:text="s"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDavisI" />
+
+        <TextView
+            android:id="@+id/txtDavisI"
+            android:layout_width="34dp"
+            android:layout_height="0dp"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:fontFamily="@font/arvo_bold"
+            android:inputType="textPersonName"
+            android:text="i"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDavisV2" />
+
+        <TextView
+            android:id="@+id/txtSylvesterS"
+            android:layout_width="34dp"
+            android:layout_height="35dp"
+
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:fontFamily="@font/arvo_bold"
+            android:inputType="textPersonName"
+            android:text="S"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtSylvesterY"
+            android:layout_width="34dp"
+            android:layout_height="39dp"
+
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:fontFamily="@font/arvo_bold"
+            android:inputType="textPersonName"
+            android:text="y"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSylvesterS" />
+
+        <TextView
+            android:id="@+id/txtSylvesterL"
+            android:layout_width="34dp"
+
+            android:layout_height="32dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:fontFamily="@font/arvo_bold"
+            android:inputType="textPersonName"
+            android:text="l"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSylvesterY" />
+
+        <TextView
+            android:id="@+id/txtDavisA"
+            android:layout_width="34dp"
+            android:layout_height="0dp"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:fontFamily="@font/arvo_bold"
+            android:inputType="textPersonName"
+            android:text="a"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDavisD" />
+
+        <TextView
+            android:id="@+id/txtDavisV2"
+            android:layout_width="34dp"
+            android:layout_height="0dp"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:fontFamily="@font/arvo_bold"
+            android:inputType="textPersonName"
+            android:text="v"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDavisA" />
+
+        <TextView
+            android:id="@+id/txtDavisD"
+            android:layout_width="34dp"
+            android:layout_height="0dp"
+
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:fontFamily="@font/arvo_bold"
+            android:inputType="textPersonName"
+            android:text="D"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
 
 </android.support.design.widget.CoordinatorLayout>
