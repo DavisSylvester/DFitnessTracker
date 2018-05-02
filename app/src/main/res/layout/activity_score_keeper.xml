@@ -23,7 +23,7 @@
     <android.support.constraint.ConstraintLayout
         android:id="@+id/clPlayer2Area"
         android:layout_width="170dp"
-        android:layout_height="498dp"
+        android:layout_height="421dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -37,9 +37,10 @@
             android:id="@+id/btnResetB"
             android:layout_width="match_parent"
             android:layout_height="42dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:background="@color/colorAccent"
             android:onClick="ResetB"
             android:text="Reset"
@@ -47,7 +48,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnStirFryB" />
 
         <TextView
             android:id="@+id/txtActiveCalorieCounterB"
@@ -86,8 +88,8 @@
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
-            android:text="Stir Fry"
             android:onClick="AddStirFry"
+            android:text="Stir Fry"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -100,8 +102,8 @@
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
-            android:text="Snickers"
             android:onClick="AddSnicker"
+            android:text="Snickers"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -114,8 +116,8 @@
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
-            android:text="Donut"
             android:onClick="AddDonut"
+            android:text="Donut"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -128,8 +130,8 @@
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
-            android:text="OatMeal"
             android:onClick="AddOatmeal"
+            android:text="OatMeal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtActiveCalorieCounterB" />
@@ -139,7 +141,7 @@
     <android.support.constraint.ConstraintLayout
         android:id="@+id/clPlayer1Area"
         android:layout_width="170dp"
-        android:layout_height="498dp"
+        android:layout_height="422dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
@@ -150,10 +152,11 @@
         <Button
             android:id="@+id/btnResetA"
             android:layout_width="match_parent"
-            android:layout_height="42dp"
-            android:layout_marginBottom="16dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="4dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:background="@color/colorAccent"
             android:onClick="ResetA"
             android:text="Reset"
@@ -161,7 +164,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnStirFryA" />
 
         <Button
             android:id="@+id/btnStirFryA"
@@ -183,8 +187,8 @@
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
-            android:text="Snickers"
             android:onClick="AddSnicker"
+            android:text="Snickers"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnDonutA" />
@@ -196,8 +200,8 @@
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
-            android:text="Donut"
             android:onClick="AddDonut"
+            android:text="Donut"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnOatmealA" />
@@ -209,8 +213,8 @@
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
-            android:text="OatMeal"
             android:onClick="AddOatmeal"
+            android:text="OatMeal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtActiveCalorieCounterA" />
