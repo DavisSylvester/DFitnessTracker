@@ -1,4 +1,4 @@
 package com.davissylvester.dfitnesstracker.domainClasses
 
-class Answer(Id: Int, Text: String) {
+data class Answer(var Id: Int, var Text: String) {
 }

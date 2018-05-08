@@ -1,4 +1,4 @@
 package com.davissylvester.dfitnesstracker.domainClasses
 
-class Choices(Id: Int, Text: String) {
+data class Choice(var Id: Int,var  Text: String) {
 }
