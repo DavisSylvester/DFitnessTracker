@@ -22,6 +22,7 @@ class Quiz : AppCompatActivity() {
     var q2Answer: String = ""
     var q3Answer: String = ""
     var q4Answer: String = ""
+    var daysToExercise = ""
     private var hasError: Boolean = false;
 
     var questions = ArrayList<Question>()
@@ -132,9 +133,22 @@ class Quiz : AppCompatActivity() {
 
         if (!hasError) {
 
-            showErrorToaster("Your responses have been recorded!")
+            val msg = "Your Workout goal is: $q1Answer\n" +
+                    "You feel $q2Answer about your health\n" +
+                    "You want to train on: $daysToExercise \n" +
+                    "You want to start immediately: $q4Answer"
+
+
+            showErrorToaster(msg)
+
+            resetForm()
+
         }
 
+    }
+
+    private fun resetForm() {
+        daysToExercise = ""
     }
 
     private fun getResponseFromQuestionOne() {
@@ -184,7 +198,7 @@ class Quiz : AppCompatActivity() {
         if (cbSaturday.isChecked) {
             days[2] = 1
         }
-             
+
 
 
         if (days.all { number -> radioButtonHasDefaultValue(number)  }){
@@ -192,6 +206,39 @@ class Quiz : AppCompatActivity() {
 
             "Question #3 requires you to select at least one day".toast(this)
         }
+
+        // var counter = 0
+
+
+        if (days[0] == 1) {
+            daysToExercise += "Monday,"
+        }
+        if (days[1] == 1) {
+            daysToExercise += "Wednesday,"
+        }
+        if (days[2] == 1) {
+            daysToExercise += "Saturday,"
+        }
+
+        daysToExercise = daysToExercise.substring(0, daysToExercise.length - 1)
+
+
+        /*days.forEach { number -> run {
+
+            if (number == 1 && counter == 0) {
+                daysToExercise = "$daysToExercise Monday"
+            }
+
+            if (number == 1 && counter == 1) {
+                daysToExercise = "Wednesday"
+            }
+
+            if (number == 1 && counter == 2) {
+                daysToExercise = "Saturday"
+            }
+            counter ++
+                } }
+*/
 
 
     }
