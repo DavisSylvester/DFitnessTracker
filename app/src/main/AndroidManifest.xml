@@ -9,24 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
         <activity
             android:name=".trainerContactInfo"
             android:label="@string/title_activity_trainer_contact_info"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".ScoreKeeper">
+        <activity android:name=".ScoreKeeper"></activity>
+        <activity android:name=".Quiz">
 
         </activity>
-        <activity android:name=".Quiz">
+        <activity android:name=".QuizAppJava">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

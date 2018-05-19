@@ -6,11 +6,10 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
-import com.davissylvester.dfitnesstracker.R.id.txtQ2Health
 import com.davissylvester.dfitnesstracker.domainClasses.Choice
 import com.davissylvester.dfitnesstracker.domainClasses.Question
 import kotlinx.android.synthetic.main.activity_quiz.*
-import java.lang.Integer.parseInt
+
 
 class Quiz : AppCompatActivity() {
 
